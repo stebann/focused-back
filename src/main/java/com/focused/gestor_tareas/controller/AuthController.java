@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AuthController {
 
+    // Ruta para la raíz, redirige a /login
+    @GetMapping("/")
+    public String redirectToLogin() {
+        return "redirect:/login";
+    }
+
     // Ruta para el login
     @GetMapping("/login")
     public String showLoginPage() {
