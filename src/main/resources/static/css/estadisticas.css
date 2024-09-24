@@ -1,0 +1,65 @@
+body{
+  background-color: #121212;
+}
+
+.container {
+  width: 100%;
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+.row {
+  margin: 0; /* Elimina el margen horizontal por defecto de las filas */
+  padding: 0; /* Elimina el padding por defecto de las filas */
+}
+
+.card {
+  background-color: #2c2c2c; /* Color de fondo de las tarjetas */
+  color: #fff; /* Texto blanco dentro de las tarjetas */
+  border-radius: 10px;
+  padding: 15px; /* Ajustado el padding para hacer las tarjetas más pequeñas */
+  transition: transform 0.2s ease;
+  width: 100%; /* Asegura que las tarjetas ocupen el ancho completo del contenedor */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 1.8rem; /* Ajusta el tamaño del texto */
+  font-weight: bold;
+  color: #fff; /* Cambiado a blanco */
+}
+
+.stat-label {
+  font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  color: #ccc; /* Cambiado a un gris claro para contraste */
+}
+
+.icon {
+  font-size: 2rem; /* Ajusta el tamaño del icono */
+  color: #4576b2;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .stat-value {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+}

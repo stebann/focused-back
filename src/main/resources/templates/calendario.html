@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario Interactivo</title>
+  <link rel="stylesheet" href="css/calendario.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <!-- Barra lateral -->
+  <div class="sidebar">
+    <h2>Mi Calendario</h2>
+    <div class="user-info mb-3">
+      <h3 class="mb-4">Ronald Toro Villalba</h3>
+      <p>Progreso de tareas</p>
+    </div>
+    <div class="calendar-summary">
+      <h3>Julio 2022</h3>
+      <p>Tareas completadas</p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="categories">
+      <h3>Categorías</h3>
+      <ul>
+        <li><span class="dot personal"></span>Personal</li>
+        <li><span class="dot work"></span>Trabajo</li>
+        <li><span class="dot health"></span>Salud</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Panel principal del calendario -->
+  <div class="main-panel">
+    <header>
+      <h1>Diciembre 2023</h1>
+      <nav>
+        <button>Mes</button>
+        <button>Semana</button>
+        <button>Día</button>
+        <button>Hoy</button>
+      </nav>
+    </header>
+    <div class="calendar-grid">
+      <!-- Días de la semana -->
+      <div class="day-header">Dom</div>
+      <div class="day-header">Lun</div>
+      <div class="day-header">Mar</div>
+      <div class="day-header">Mié</div>
+      <div class="day-header">Jue</div>
+      <div class="day-header">Vie</div>
+      <div class="day-header">Sáb</div>
+
+      <!-- Días del mes -->
+      <div class="day" data-day="1">1</div>
+      <div class="day" data-day="2">2</div>
+      <!-- Continua con más días -->
+    </div>
+  </div>
+
+  <!-- Panel emergente para agregar eventos -->
+  <div id="event-modal" class="modal">
+    <div class="modal-content">
+      <h2>Agregar Evento</h2>
+      <form id="event-form">
+        <label for="event-date">Fecha:</label>
+        <input type="date" id="event-date" required>
+
+        <label for="event-category">Categoría:</label>
+        <select id="event-category">
+          <option value="personal">Personal</option>
+          <option value="work">Trabajo</option>
+          <option value="health">Salud</option>
+        </select>
+
+        <label for="event-description">Descripción:</label>
+        <input type="text" id="event-description" required>
+
+        <button type="submit">Agregar Evento</button>
+      </form>
+      <button class="close-modal">&times;</button>
+    </div>
+  </div>
+</div>
+
+<script src="calendario.js"></script>
+</body>
+</html>

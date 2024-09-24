@@ -1,0 +1,42 @@
+body {
+  background-color: #121212;
+  color: white;
+}
+
+.group-card {
+  background-color: #383838;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.group-card h4 {
+  color: #d1d1d1;
+}
+
+.group-card:hover {
+  background-color: #4d4d4d;
+  cursor: pointer;
+}
+
+.btn-group-view {
+  background-color: #616161;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-group-view:hover {
+  background-color: #757575;
+}
+
+.title {
+  background-color: #424242;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

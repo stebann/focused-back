@@ -1,0 +1,173 @@
+/* Estilo general */
+body {
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: 121212;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #121212;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.sidebar h2, .sidebar h3 {
+  color: #ffcc00;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #555;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress {
+  width: 40%;
+  background-color: #ffcc00;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.personal {
+  background-color: #ff4d4d;
+}
+
+.work {
+  background-color: #4d94ff;
+}
+
+.health {
+  background-color: #47d147;
+}
+
+/* Panel principal del calendario */
+.main-panel {
+  width: 75%;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #ffcc00;
+}
+
+nav button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #ffcc00;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day-header {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.day {
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #ffcc00;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
